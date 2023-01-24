@@ -32,6 +32,11 @@ body {
     height: 100%;
 }
 
+.ticket span {
+    font-size: 1.2rem;
+}
+
+
 .name-passenger {
     border-right: 1px solid black;
     height: 100%;
@@ -39,4 +44,17 @@ body {
 
 select {
     height: 30px;
+}
+
+label {
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+.ticket-bg {
+    display: none;
+}
+
+.display-block {
+    display: block;
 }

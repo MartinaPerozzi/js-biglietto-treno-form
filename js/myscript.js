@@ -47,6 +47,10 @@ button_submit_el.addEventListener(
             // Messaggio all'utente
             document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%";
 
+            // Ticket
+            const ticket = document.querySelector('.ticket-bg');
+            ticket.classList.add("display-block");
+
             // Name category
             document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
             // Sale category
@@ -71,6 +75,10 @@ button_submit_el.addEventListener(
             // Messaggio all'utente
             document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%";
 
+            // Ticket
+            const ticket = document.querySelector('.ticket-bg');
+            ticket.classList.add("display-block");
+
             // Name category
             document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
             // Sale category
@@ -91,6 +99,9 @@ button_submit_el.addEventListener(
             // Messaggio all'utente
             document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + " Il prezzo totale del biglietto è " + fixedNumber + "€";
 
+            // Ticket
+            const ticket = document.querySelector('.ticket-bg');
+            ticket.classList.add("display-block");
             // Name category
             document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
             // Sale category
