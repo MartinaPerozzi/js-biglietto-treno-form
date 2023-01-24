@@ -22,7 +22,7 @@ button_submit_el.addEventListener(
         console.log("myKm", myKm);
 
         // Chiedere all'utente la sua età
-        const myAge = document.querySelector('#My-Age option').value;
+        const myAge = document.querySelector('#My-Age').value;
         console.log("myAge", myAge);
 
         // CALCOLARE PREZZO
