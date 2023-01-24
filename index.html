@@ -25,24 +25,33 @@
 </head>
 
 <body>
-	<div class="trip-box">
+	<section class="trip-box">
 		<h1 id="your_trip"></h1>
-		<!-- km da percorre -->
 		<form id="form-utente">
-			First name: <input type="text" name="first-name">
-			Last name: <input type="text" name="last-name">
-			<select name="Age-range" id="My-Age">
-				<option value="Minorenne"></option>
-				<option value="Maggiorenne"></option>
-				<option value="Over 65"></option>
+			Name and Surname: <input id="name-surname" type="text" name="name-surname" value="">
+			<select name="age-range" id="My-Age">
+				<option value="minorenne">Minorenne</option>
+				<option value="maggiorenne">Maggiorenne</option>
+				<option value="over65">Over 65</option>
 			</select>
 
+			<!-- km da percorre -->
 			<input type="number" class="my-km">
 			<input class="button-proceed" type="button" value="Submit">
 		</form>
 
 
 
+	</section>
+
+	<div class="ticket-bg">
+		<div class="ticket row">
+			<div class="col4"></div>
+			<div class="col2"></div>
+			<div class="col2"></div>
+			<div class="col2"></div>
+			<div class="col2 price"></div>
+		</div>
 	</div>
 
 	<!-- JAVASCRIPT -->
