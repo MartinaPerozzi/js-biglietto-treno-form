@@ -69,7 +69,7 @@ button_submit_el.addEventListener(
             let fixedNumber = kmPercorso.toFixed(2);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%";
 
             // Name category
             document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
@@ -89,7 +89,7 @@ button_submit_el.addEventListener(
             console.log("kmPercorso=", `(${myKm} * ${xKm})`, kmPercorso);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Grazie " + myName + " Il prezzo totale del biglietto è " + fixedNumber + "€";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + " Il prezzo totale del biglietto è " + fixedNumber + "€";
 
             // Name category
             document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
