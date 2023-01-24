@@ -45,7 +45,7 @@ button_submit_el.addEventListener(
             let fixedNumber = kmPercorso.toFixed(2);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%!";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%";
 
             // Name category
             document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
@@ -53,6 +53,13 @@ button_submit_el.addEventListener(
             document.getElementById("sale").innerHTML = "Sconto del 20%";
             // Price category 
             document.getElementById("price").innerHTML = fixedNumber + "€";
+            // Carrozza
+            document.getElementById("carrozza").innerHTML = "2";
+            // Cp
+            const randomNumber = Math.floor(Math.random() * 9000 + 1000);
+            document.getElementById("cp").innerHTML = randomNumber;
+
+
 
         } else if (myAge == "over65") {
 
@@ -62,7 +69,7 @@ button_submit_el.addEventListener(
             let fixedNumber = kmPercorso.toFixed(2);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%!";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%";
 
             // Name category
             document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
@@ -70,6 +77,11 @@ button_submit_el.addEventListener(
             document.getElementById("sale").innerHTML = "Sconto del 40%";
             // Price category 
             document.getElementById("price").innerHTML = fixedNumber + "€";
+            // Carrozza
+            document.getElementById("carrozza").innerHTML = "2";
+            // Cp
+            const randomNumber = Math.floor(Math.random() * 9000 + 1000);
+            document.getElementById("cp").innerHTML = randomNumber;
 
         } else {
 
@@ -85,6 +97,11 @@ button_submit_el.addEventListener(
             document.getElementById("sale").innerHTML = "Biglietto Standard ";
             // Price category 
             document.getElementById("price").innerHTML = fixedNumber + "€";
+            // Carrozza
+            document.getElementById("carrozza").innerHTML = "2";
+            // Cp
+            const randomNumber = Math.floor(Math.random() * 9000 + 1000);
+            document.getElementById("cp").innerHTML = randomNumber;
         }
 
     }
