@@ -45,7 +45,7 @@ button_submit_el.addEventListener(
             let fixedNumber = kmPercorso.toFixed(2);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + " Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%";
 
             // Ticket
             const ticket = document.querySelector('.ticket-bg');
@@ -73,7 +73,7 @@ button_submit_el.addEventListener(
             let fixedNumber = kmPercorso.toFixed(2);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + " Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%";
 
             // Ticket
             const ticket = document.querySelector('.ticket-bg');
