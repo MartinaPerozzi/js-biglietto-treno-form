@@ -23,3 +23,16 @@ body {
 .ticket div {
     padding-top: 2rem;
 }
+
+.button-proceed {
+    background-color: rgb(140, 218, 218);
+}
+
+.ticket {
+    height: 100%;
+}
+
+.name-passenger {
+    border-right: 1px solid black;
+    height: 100%;
+}

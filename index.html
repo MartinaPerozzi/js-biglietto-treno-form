@@ -26,37 +26,39 @@
 <body>
 	<div class="bg">
 		<!-- Calcola il prezzo del tuo biglietto -->
-		<section class="trip-box d-flex flex-column mt-5">
+		<section class="trip-box d-flex flex-column mt-3">
 			<h1 id="your_trip"> Calcola il prezzo del tuo biglietto</h1>
 			<!-- Form utenti -->
 			<div class="form">
 				<form id="form-utente" class="pt-4">
 					<!-- Name -->
-					<div class="passenger-name pt-2">
-						<h5>Name</h5>
-						<input id="name" type="text" name="name" value="" required>
-					</div>
-					<!-- Surname -->
-					<div class="passenger-surname pt-4">
-						<h5>Surname</h5>
-						<input id="surname" type="text" name="surname" value="" required>
-					</div>
-					<!-- Age -->
-					<div class="passenger-age pt-4">
-						<h5>Fascia d'età</h5>
+					<div class="d-flex flex-column">
+						<div class="passenger-name pt-2">
+							<label for="#name">Name</label>
+							<input id="name" type="text" name="name" value="" required>
+						</div>
+						<!-- Surname -->
+						<div class="passenger-surname pt-4">
+							<label for="#surname">Surname</label>
+							<input id="surname" type="text" name="surname" value="" required>
+						</div>
 						<!-- Age -->
-						<select name="age-range d-flex pt-4" id="My-Age">
-							<option value="minorenne">Minorenne</option>
-							<option value="maggiorenne">Maggiorenne</option>
-							<option value="over65">Over 65</option>
-						</select>
-					</div>
+						<div class="passenger-age pt-4">
+							<label for="My-Age">Fascia d'età</label>
+							<!-- Age -->
+							<select name="age-range d-flex pt-4" id="My-Age">
+								<option value="minorenne">Minorenne</option>
+								<option value="maggiorenne">Maggiorenne</option>
+								<option value="over65">Over 65</option>
+							</select>
+						</div>
 
-					<!-- Km-->
-					<div class="passenger-trip pt-4">
-						<h5>Km da percorrere</h5>
-						<input type="number" class="my-km" required>
-						<input class="button-proceed" type="button" value="Procedi">
+						<!-- Km-->
+						<div class="passenger-trip pt-4 pb-4">
+							<label for="#surname">Km da percorrere</label>
+							<input type="number" class="my-km" required>
+							<input class="button-proceed btn rounded-pill" type="button" value="Procedi">
+						</div>
 					</div>
 				</form>
 			</div>

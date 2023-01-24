@@ -48,8 +48,7 @@ button_submit_el.addEventListener(
             document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%!";
 
             // Name category
-            document.getElementById("name-sur").innerHTML = myName;
-
+            document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
             // Sale category
             document.getElementById("sale").innerHTML = "Sconto del 20%";
             // Price category 
@@ -65,13 +64,27 @@ button_submit_el.addEventListener(
             // Messaggio all'utente
             document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%!";
 
+            // Name category
+            document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
+            // Sale category
+            document.getElementById("sale").innerHTML = "Sconto del 40%";
+            // Price category 
+            document.getElementById("price").innerHTML = fixedNumber + "€";
+
         } else {
 
             let kmPercorso = (myKm * xKm);
             console.log("kmPercorso=", `(${myKm} * ${xKm})`, kmPercorso);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + kmPercorso + "€";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + " Il prezzo totale del biglietto è " + fixedNumber + "€";
+
+            // Name category
+            document.getElementById("name-sur").innerHTML = myName + " " + mySurname;
+            // Sale category
+            document.getElementById("sale").innerHTML = "Biglietto Standard ";
+            // Price category 
+            document.getElementById("price").innerHTML = fixedNumber + "€";
         }
 
     }
