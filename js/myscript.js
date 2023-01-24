@@ -19,7 +19,7 @@ button_submit_el.addEventListener(
         console.log("myKm", myKm);
 
         // Chiedere all'utente la sua età
-        const myAge = document.querySelector('#My-Age>option').value;
+        const myAge = document.querySelector('#My-Age > option').value;
         console.log("myAge", myAge);
 
         // CALCOLARE PREZZO
@@ -35,7 +35,7 @@ button_submit_el.addEventListener(
 
         // APPLICARE SCONTI
 
-        if (myAge = "minorenne") {
+        if (myAge == "minorenne") {
             let kmPercorso = (myKm * xKm) - (((myKm * xKm) * 20) / 100);
             console.log(kmPercorso, "con sconto del 20%");
 
@@ -45,7 +45,7 @@ button_submit_el.addEventListener(
             document.getElementById("your_trip").innerHTML = "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%!";
         }
 
-        else if (myAge >= 65) {
+        else if (myAge == "over65") {
             let kmPercorso = (myKm * xKm) - (((myKm * xKm) * 40) / 100);
             console.log(kmPercorso, "con sconto del 40%");
 
