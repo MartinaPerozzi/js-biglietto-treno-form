@@ -54,7 +54,7 @@ button_submit_el.addEventListener(
             // Price category 
             document.getElementById("price").innerHTML = fixedNumber + "€";
             // Carrozza
-            document.getElementById("carrozza").innerHTML = "2";
+            document.getElementById("carrozza").innerHTML = "3";
             // Cp
             const randomNumber = Math.floor(Math.random() * 9000 + 1000);
             document.getElementById("cp").innerHTML = randomNumber;
@@ -78,7 +78,7 @@ button_submit_el.addEventListener(
             // Price category 
             document.getElementById("price").innerHTML = fixedNumber + "€";
             // Carrozza
-            document.getElementById("carrozza").innerHTML = "2";
+            document.getElementById("carrozza").innerHTML = "1";
             // Cp
             const randomNumber = Math.floor(Math.random() * 9000 + 1000);
             document.getElementById("cp").innerHTML = randomNumber;
