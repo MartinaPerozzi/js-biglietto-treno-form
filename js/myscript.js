@@ -23,8 +23,6 @@ let kmPercorso = (myKm * xKm);
 console.log("kmPercorso=", `(${myKm} * ${xKm})`, kmPercorso);
 let fixedNumber = kmPercorso.toFixed(2);
 
-// Messaggio all'utente
-document.getElementById("your_trip").innerHTML = "Il prezzo totale del biglietto è " + fixedNumber + "€";
 
 // Applicare SCONTI
 
@@ -35,14 +33,12 @@ if (myAge < 18) {
 
     let fixedNumber = kmPercorso.toFixed(2);
 
-    document.getElementById("your_trip").innerHTML = "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%!";
 } else if (myAge >= 65) { //Se l'età dell'utente è >=65
     let kmPercorso = (myKm * xKm) - (((myKm * xKm) * 40) / 100);
     console.log(kmPercorso, "con sconto del 40%");
 
     let fixedNumber = kmPercorso.toFixed(2);
 
-    document.getElementById("your_trip").innerHTML = "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%!";
 }
 
 // MILESTONE 1
@@ -58,6 +54,7 @@ button_submit_el.addEventListener(
 
             let fixedNumber = kmPercorso.toFixed(2);
 
+            // Messaggio all'utente
             document.getElementById("your_trip").innerHTML = "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%!";
         }
 
@@ -66,6 +63,8 @@ button_submit_el.addEventListener(
             console.log(kmPercorso, "con sconto del 40%");
 
             let fixedNumber = kmPercorso.toFixed(2);
+
+            // Messaggio all'utente
             document.getElementById("your_trip").innerHTML = "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%!";
         }
         else {
