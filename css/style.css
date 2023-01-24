@@ -19,3 +19,7 @@ body {
     height: 400px;
     text-align: center;
 }
+
+.ticket div {
+    padding-top: 2rem;
+}

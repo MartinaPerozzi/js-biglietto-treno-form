@@ -21,7 +21,6 @@
 
 	<!-- JAVASCRIPT inclusion 2 method -->
 	<!-- <script type="text/javascript" src="./js/myscript.js" defer> </script> -->
-	</body>
 </head>
 
 <body>
@@ -30,33 +29,55 @@
 		<section class="trip-box d-flex flex-column mt-5">
 			<h1 id="your_trip"> Calcola il prezzo del tuo biglietto</h1>
 			<!-- Form utenti -->
-			<form id="form-utente" class="pt-4">
-				Name and Surname: <input id="name-surname" type="text" name="name-surname" value="" required>
-				<select name="age-range" id="My-Age" required>
-					<option value="minorenne">Minorenne</option>
-					<option value="maggiorenne">Maggiorenne</option>
-					<option value="over65">Over 65</option>
-				</select>
+			<div class="form">
+				<form id="form-utente" class="pt-4">
+					<!-- Name -->
+					<div class="passenger-name pt-2">
+						<h5>Name</h5>
+						<input id="name" type="text" name="name" value="" required>
+					</div>
+					<!-- Surname -->
+					<div class="passenger-surname pt-4">
+						<h5>Surname</h5>
+						<input id="surname" type="text" name="surname" value="" required>
+					</div>
+					<!-- Age -->
+					<div class="passenger-age pt-4">
+						<h5>Fascia d'età</h5>
+						<!-- Age -->
+						<select name="age-range d-flex pt-4" id="My-Age">
+							<option value="minorenne">Minorenne</option>
+							<option value="maggiorenne">Maggiorenne</option>
+							<option value="over65">Over 65</option>
+						</select>
+					</div>
 
-				<!-- km da percorre -->
-				<input type="number" class="my-km" required>
-				<input class="button-proceed" type="button" value="Submit">
-			</form>
+					<!-- Km-->
+					<div class="passenger-trip pt-4">
+						<h5>Km da percorrere</h5>
+						<input type="number" class="my-km" required>
+						<input class="button-proceed" type="button" value="Procedi">
+					</div>
+				</form>
+			</div>
 
 		</section>
 	</div>
 
 	<div class="ticket-bg">
 		<div class="ticket row">
-			<div class="col-4">Nome Passeggero
+			<div class="col-4 d-flex flex-column name-passenger">
+				<span>Nome Passeggero</span>
 				<div id="name-sur"></div>
 			</div>
-			<div class="col-2">Offerta
+			<div class="col-2 d-flex flex-column">
+				<span>Offerta</span>
 				<div id="sale"></div>
 			</div>
-			<div class="col-2">Carrozza</div>
-			<div class="col-2">Codice CP</div>
-			<div class="col-2">Costo biglietto
+			<div class="col-2 d-flex flex-column">Carrozza</div>
+			<div class="col-2 d-flex flex-column">Codice CP</div>
+			<div class="col-2 d-flex flex-column">
+				<span>Costo biglietto</span>
 				<div id="price"></div>
 			</div>
 		</div>

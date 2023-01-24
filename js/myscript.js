@@ -11,15 +11,18 @@ button_submit_el.addEventListener(
         // Dati necessari: numero di km da percorrere e età del passeggero
 
         // Chiedere all'utente il suo nome e cognome
-        const myName = document.querySelector("#name-surname").value;
+        const myName = document.querySelector("#name").value;
         console.log("myName", myName);
+
+        const mySurname = document.querySelector("#surname").value;
+        console.log("mySurname", mySurname);
 
         // Chiedere all'utente il numero di km che deve percorrere
         const myKm = document.querySelector("input[type = 'number']").value;
         console.log("myKm", myKm);
 
         // Chiedere all'utente la sua età
-        const myAge = document.querySelector('#My-Age > option').value;
+        const myAge = document.querySelector('#My-Age option').value;
         console.log("myAge", myAge);
 
         // CALCOLARE PREZZO
@@ -42,14 +45,18 @@ button_submit_el.addEventListener(
             let fixedNumber = kmPercorso.toFixed(2);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%!";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "!" + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%!";
 
-            document.getElementById("sale").innerHTML = "Sconto del 20% " + fixedNumber + "€";
+            // Name category
+            document.getElementById("name-sur").innerHTML = myName;
+
+            // Sale category
+            document.getElementById("sale").innerHTML = "Sconto del 20%";
+            // Price category 
             document.getElementById("price").innerHTML = fixedNumber + "€";
 
-        }
+        } else if (myAge == "over65") {
 
-        else if (myAge == "over65") {
             let kmPercorso = (myKm * xKm) - (((myKm * xKm) * 40) / 100);
             console.log(kmPercorso, "con sconto del 40%");
 
@@ -57,8 +64,9 @@ button_submit_el.addEventListener(
 
             // Messaggio all'utente
             document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%!";
-        }
-        else {
+
+        } else {
+
             let kmPercorso = (myKm * xKm);
             console.log("kmPercorso=", `(${myKm} * ${xKm})`, kmPercorso);
 
@@ -67,4 +75,4 @@ button_submit_el.addEventListener(
         }
 
     }
-)
+);
