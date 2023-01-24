@@ -42,7 +42,11 @@ button_submit_el.addEventListener(
             let fixedNumber = kmPercorso.toFixed(2);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%!";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 20%!";
+
+            document.getElementById("sale").innerHTML = "Sconto del 20% " + fixedNumber + "€";
+            document.getElementById("price").innerHTML = fixedNumber + "€";
+
         }
 
         else if (myAge == "over65") {
@@ -52,14 +56,14 @@ button_submit_el.addEventListener(
             let fixedNumber = kmPercorso.toFixed(2);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%!";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + fixedNumber + "€ con uno sconto applicato del 40%!";
         }
         else {
             let kmPercorso = (myKm * xKm);
             console.log("kmPercorso=", `(${myKm} * ${xKm})`, kmPercorso);
 
             // Messaggio all'utente
-            document.getElementById("your_trip").innerHTML = "Il prezzo totale del biglietto è " + kmPercorso + "€";
+            document.getElementById("your_trip").innerHTML = "Grazie " + myName + "Il prezzo totale del biglietto è " + kmPercorso + "€";
         }
 
     }
