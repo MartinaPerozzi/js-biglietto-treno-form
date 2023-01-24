@@ -25,32 +25,34 @@
 </head>
 
 <body>
-	<section class="trip-box">
-		<h1 id="your_trip"></h1>
-		<form id="form-utente">
-			Name and Surname: <input id="name-surname" type="text" name="name-surname" value="">
-			<select name="age-range" id="My-Age">
-				<option value="minorenne">Minorenne</option>
-				<option value="maggiorenne">Maggiorenne</option>
-				<option value="over65">Over 65</option>
-			</select>
+	<div class="container-fluid">
+		<!-- Calcola il prezzo del tuo biglietto -->
+		<section class="trip-box">
+			<h1 id="your_trip"> Calcola il prezzo del tuo biglietto</h1>
+			<!-- Form utenti -->
+			<form id="form-utente">
+				Name and Surname: <input id="name-surname" type="text" name="name-surname" value="" required>
+				<select name="age-range" id="My-Age" required>
+					<option value="minorenne">Minorenne</option>
+					<option value="maggiorenne">Maggiorenne</option>
+					<option value="over65">Over 65</option>
+				</select>
 
-			<!-- km da percorre -->
-			<input type="number" class="my-km">
-			<input class="button-proceed" type="button" value="Submit">
-		</form>
+				<!-- km da percorre -->
+				<input type="number" class="my-km" required>
+				<input class="button-proceed" type="button" value="Submit">
+			</form>
 
+		</section>
 
-
-	</section>
-
-	<div class="ticket-bg">
-		<div class="ticket row">
-			<div class="col4"></div>
-			<div class="col2"></div>
-			<div class="col2"></div>
-			<div class="col2"></div>
-			<div class="col2 price"></div>
+		<div class="ticket-bg">
+			<div class="ticket row">
+				<div class="col4"></div>
+				<div class="col2"></div>
+				<div class="col2"></div>
+				<div class="col2"></div>
+				<div class="col2 price"></div>
+			</div>
 		</div>
 	</div>
 
