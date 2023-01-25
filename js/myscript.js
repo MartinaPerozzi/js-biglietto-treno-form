@@ -59,10 +59,6 @@ button_submit_el.addEventListener(
             document.getElementById("price").innerHTML = fixedNumber + "€";
             // Carrozza
             document.getElementById("carrozza").innerHTML = "3";
-            // Cp
-            const randomNumber = Math.floor(Math.random() * 9000 + 1000);
-            document.getElementById("cp").innerHTML = randomNumber;
-
 
 
         } else if (myAge == "over65") {
@@ -87,9 +83,7 @@ button_submit_el.addEventListener(
             document.getElementById("price").innerHTML = fixedNumber + "€";
             // Carrozza
             document.getElementById("carrozza").innerHTML = "1";
-            // Cp
-            const randomNumber = Math.floor(Math.random() * 9000 + 1000);
-            document.getElementById("cp").innerHTML = randomNumber;
+
 
         } else {
 
@@ -110,10 +104,11 @@ button_submit_el.addEventListener(
             document.getElementById("price").innerHTML = fixedNumber + "€";
             // Carrozza
             document.getElementById("carrozza").innerHTML = "2";
-            // Cp
-            const randomNumber = Math.floor(Math.random() * 9000 + 1000);
-            document.getElementById("cp").innerHTML = randomNumber;
         }
+
+        // Cp
+        const randomNumber = Math.floor(Math.random() * 9000 + 1000);
+        document.getElementById("cp").innerHTML = randomNumber;
 
     }
 );
